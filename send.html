@@ -3,10 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Contact Form</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+</head>
+<body>
+    <form id="contact-form">
+        <!-- To simplify the tutorial, the value is static. -->
+        <input type="hidden" name="contact_number" value="697483">
+        <label>Name</label>
+        <input type="text" name="from_name">
+        <label>Email</label>
+        <input type="email" name="from_email">
+        <label for="">الشكوة :</label>
+        <input type="text" name="randvu">
+        <label for="">رقم الهاتف :</label>
+        <input type="tel"name="telefon" id="">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
+    <p id="result"></p>
     <script type="text/javascript">
         (function() {
             // https://dashboard.emailjs.com/admin/account
@@ -30,23 +48,5 @@
             });
         }
     </script>
-</head>
-<body>
-    <form id="contact-form">
-        <!-- To simplify the tutorial, the value is static. -->
-        <input type="hidden" name="contact_number" value="697483">
-        <label>Name</label>
-        <input type="text" name="from_name">
-        <label>Email</label>
-        <input type="email" name="from_email">
-        <label for="">الشكوة :</label>
-        <input type="text" name="randvu">
-        <label for="">رقم الهاتف :</label>
-        <input type="tel"name="telefon" id="">
-        <label>Message</label>
-        <textarea name="message"></textarea>
-        <input type="submit" value="Send">
-    </form>
-    <p id="result"></p>
 </body>
 </html>
